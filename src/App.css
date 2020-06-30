@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 17px;
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  user-select: none;
+  text-decoration: none;
+}
+button {
+  user-select: none;
+  text-decoration: none;
+}

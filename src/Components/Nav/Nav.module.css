@@ -1,0 +1,65 @@
+nav {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fefe;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 5rem;
+  border-bottom: solid rgba(230, 212, 230, 0.933) 2px;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 2.7rem;
+  position: relative;
+  color: #333;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../asset/star.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  right: -3.5rem;
+  width: 60px;
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+}
+
+nav ul li {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  font-weight: 750;
+  font-size: 1.3rem;
+  position: relative;
+  letter-spacing: 3px;
+  color: #304;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 18px);
+  transform: scale(0);
+  transform-origin: left;
+  bottom: -3px;
+  height: 2px;
+  background-color: #00005c;
+  transition: 350ms ease-in-out 20ms;
+}
+
+nav ul li a:hover::before {
+  transform-origin: right;
+  transform: scale(1);
+}
