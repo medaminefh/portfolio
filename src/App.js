@@ -11,7 +11,7 @@ import {
 } from "./Components";
 import {
   Switch,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Redirect,
 } from "react-router-dom";
