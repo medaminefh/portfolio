@@ -15,10 +15,12 @@ const Contact = () => {
         <h2 className="lg:text-4xl md:border-none text-3xl pb-6 border-b-2 border-white text-white">
           Contact Me{" "}
         </h2>
-        <h5 className="pt-5 text-xl lg:text-2xl">
+        <h2 className="pt-5 text-xl lg:text-2xl">
           The best way to contact me is via Email:
-          <h2 className="select-all">fhal.mohamed.amine@gmail.com</h2>
-        </h5>
+          <p className="text-xl lg:text-2xl select-all">
+            fhal.mohamed.amine@gmail.com
+          </p>
+        </h2>
         <h4 className="lg:text-2xl text-xl tracking-wider">
           If you prefer, you can also find me on social networks such as{" "}
           <a
