@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const NotMatch = () => {
   return (
-    <div className="flex flex-col justify-evenly items-center min-h-screen min-w-screen">
+    <div
+      style={{ zIndex: "30" }}
+      className="flex flex-col justify-evenly items-center min-h-screen min-w-screen"
+    >
       <h1 className="text-4xl">404 Not Found</h1>
       <Link
         to="/"
