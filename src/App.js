@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { Contact, About, Nav, Header, Projects, Devices } from "./Components";
+import {
+  NotMatch,
+  Contact,
+  About,
+  Nav,
+  Header,
+  Projects,
+  Devices,
+} from "./Components";
 import {
   Switch,
   BrowserRouter as Router,
@@ -27,6 +35,7 @@ function App() {
           <Route path="/Projects" render={(props) => <Projects {...props} />} />
           <Route path="/About" render={(props) => <About {...props} />} />
           <Route path="/Contact" render={(props) => <Contact {...props} />} />
+          <Route path="*" render={NotMatch} />
         </Switch>
       </div>
     </Router>
