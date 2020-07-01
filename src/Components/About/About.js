@@ -16,10 +16,10 @@ const About = () => {
               {name}
             </p>
           </div>
-          <div>
+          <div className="lg:w-1/4 xl:p-8">
             <img
               draggable="false"
-              className="lg:h-full lg:m-0 lg:rounded w  md:mb-12 mb-8 mt-4 m-auto object-cover object-center w-56 h-64 rounded-full border-2 border-gray-100 "
+              className="lg:w-full lg:h-full lg:m-0 lg:rounded md:mb-12 mb-8 mt-4 m-auto object-cover object-center w-56 h-64 rounded-full border-2 border-gray-100 "
               src={med}
               alt="About me"
             />

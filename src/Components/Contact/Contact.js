@@ -5,11 +5,11 @@ const Contact = () => {
   const { email } = resumer;
   return (
     <div className=" lg:flex-row-reverse md:items-center md:flex-row bg-gray-700 flex flex-col justify-evenly w-screen md:h-screen min-h-screen">
-      <div className="mt-10 md:m-0 ">
+      <div className="lg:w-1/4 xl:p-8 mt-10 md:m-0 ">
         <img
           alt="me"
           draggable="false"
-          className="border-r-8 lg:h-full lg:m-0 lg:rounded md:mb-12 mb-8 mt-4 m-auto object-cover object-center w-56 h-64 rounded-full border-2 border-gray-100 "
+          className="lg:w-full border-r-8 lg:h-full lg:m-0 lg:rounded md:mb-12 mb-8 mt-4 m-auto object-cover object-center w-56 h-64 rounded-full border-2 border-gray-100 "
           src={me}
         />
       </div>
