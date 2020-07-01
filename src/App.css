@@ -7,16 +7,13 @@
 }
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 
-a {
-  user-select: none;
-  text-decoration: none;
-}
+a,
 button {
   user-select: none;
   text-decoration: none;
