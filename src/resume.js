@@ -1,5 +1,5 @@
 import amount from "./asset/Amount.png";
-import weather from "./asset/Weather1.png";
+import gallery from "./asset/gallery.png";
 import covid from "./asset/covid.png";
 import covid2 from "./asset/covid2.png";
 import memes from "./asset/Meme.png";
@@ -44,7 +44,7 @@ export const resumer = {
     {
       name: "Gallery App",
       site: "https://medaminefh.github.io/photosearch",
-      img: weather,
+      img: gallery,
       alt: "gallery image",
       title: "Gallery App",
     },
