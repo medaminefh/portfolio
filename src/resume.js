@@ -11,6 +11,7 @@ import quotes from "./asset/quotes.png";
 export const resumer = {
   name: "Med Amine Fh",
   age: 23,
+  email: "fhal.mohamed.amine@gmail.com",
   nationality: "Tunisian",
   languages: [
     "Html",
@@ -41,11 +42,11 @@ export const resumer = {
       title: "Covid Tracker App 2",
     },
     {
-      name: "Weather App",
-      site: "https://wea-th-er-app.netlify.app",
+      name: "Gallery App",
+      site: "https://medaminefh.github.io/photosearch",
       img: weather,
-      alt: "weather image",
-      title: "Weather App",
+      alt: "gallery image",
+      title: "Gallery App",
     },
     {
       name: "Memes Generator",
