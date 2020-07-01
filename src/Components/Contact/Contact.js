@@ -1,6 +1,8 @@
 import React from "react";
 import me from "../../asset/me2.jpg";
+import { resumer } from "../../resume";
 const Contact = () => {
+  const { email } = resumer;
   return (
     <div className=" lg:flex-row-reverse md:items-center md:flex-row bg-gray-700 flex flex-col justify-evenly w-screen md:h-screen min-h-screen">
       <div className="mt-10 md:m-0 ">
@@ -17,9 +19,7 @@ const Contact = () => {
         </h2>
         <h2 className="pt-5 text-xl lg:text-2xl">
           The best way to contact me is via Email:
-          <p className="text-xl lg:text-2xl select-all">
-            fhal.mohamed.amine@gmail.com
-          </p>
+          <p className="text-xl lg:text-2xl select-all">{email}</p>
         </h2>
         <h4 className="lg:text-2xl text-xl tracking-wider">
           If you prefer, you can also find me on social networks such as{" "}
