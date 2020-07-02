@@ -31,11 +31,7 @@ const About = () => {
         >
           <p className=" text-2xl md:text-3xl">
             I'm {age} Years Old. <br />
-            I'm a {nationality} Self-Taught{" "}
-            <strong className="md:text-3xl text-2xl text-blue-400">
-              Web Dev{" "}
-            </strong>
-            .
+            I'm a {nationality} Self-Taught Web Dev .
             <br />
             I've Learned from bunch of Resources Such as <br /> FreeCodeCamp |
             Udemy | Udacity | Scrimba | Youtube , and much more . . .
