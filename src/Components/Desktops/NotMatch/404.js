@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import error from "../../asset/error.jpg";
+import error from "../../../asset/error.jpg";
 
 const NotMatch = () => {
   return (

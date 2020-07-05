@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import classes from "./devices.module.css";
-import { Link } from "react-router-dom";
 
 const Devices = () => {
   const [show, setShow] = useState(false);
@@ -9,7 +8,7 @@ const Devices = () => {
   };
   const links = ["Home", "About", "Projects", "Contact"];
   return (
-    <>
+    <div className={show ? classes.show : classes.hide}>
       <button
         style={{ zIndex: "3", position: "fixed", top: "10px", right: "10px" }}
         className="text-2xl"
@@ -17,7 +16,7 @@ const Devices = () => {
       >
         {!show ? (
           <svg
-            fill="#333"
+            fill="#ccc"
             xmlns="http://www.w3.org/2000/svg"
             width="50"
             height="50"
@@ -26,7 +25,7 @@ const Devices = () => {
           </svg>
         ) : (
           <svg
-            fill="#333"
+            fill="#ccc"
             height="50"
             viewBox="0 0 329.269 329"
             width="50"
@@ -36,23 +35,20 @@ const Devices = () => {
           </svg>
         )}
       </button>
-      <div className={show ? classes.dev : null}>
-        <nav
-          style={show ? { display: "flex" } : { display: "none" }}
-          className={classes.nav}
-        >
+      <div className={classes.dev}>
+        <nav className={classes.nav}>
           <ul>
             {links.map((a, i) => (
               <li key={i}>
-                <Link onClick={() => setShow((prev) => !prev)} to={`${a}`}>
+                <a onClick={() => setShow((prev) => !prev)} href={`#${a}`}>
                   {a}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
         </nav>
       </div>
-    </>
+    </div>
   );
 };
 

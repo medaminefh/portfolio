@@ -1,25 +1,27 @@
 nav {
   top: 0;
   display: flex;
+  min-width: 100vw;
   justify-content: space-between;
-  background-color: #fefe;
+  background-color: #2c3e50;
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
-  height: 5rem;
+  max-height: 5rem;
   border-bottom: solid rgba(230, 212, 230, 0.933) 2px;
   z-index: 2;
+  transition: all 0.5s ease-in-out;
 }
 
 .logo {
   font-size: 2.7rem;
   position: relative;
-  color: #333;
+  color: #ccc;
 }
 .logo::before {
   content: "";
   position: absolute;
-  background-image: url("../../asset/star.png");
+  background-image: url("../../../asset/star.png");
   background-position: center;
   background-repeat: no-repeat;
   right: -3.5rem;
@@ -44,7 +46,7 @@ nav ul li a {
   font-size: 1.3rem;
   position: relative;
   letter-spacing: 3px;
-  color: #304;
+  color: #f1faee;
 }
 
 nav ul li a::before {
@@ -55,7 +57,7 @@ nav ul li a::before {
   transform-origin: left;
   bottom: -3px;
   height: 2px;
-  background-color: #00005c;
+  background-color: #a8dadc;
   transition: 350ms ease-in-out 20ms;
 }
 

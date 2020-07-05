@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { App as A } from "./Components/Smartphones/App";
 import {
   NotMatch,
   Contact,
@@ -28,15 +29,30 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {!show ? <Nav /> : <Devices />}
-        <Switch>
-          <Route exact path="/" render={(props) => <Header {...props} />} />
-          <Redirect from="/Home" to="/" />
-          <Route path="/Projects" render={(props) => <Projects {...props} />} />
-          <Route path="/About" render={(props) => <About {...props} />} />
-          <Route path="/Contact" render={(props) => <Contact {...props} />} />
-          <Route path="*" render={NotMatch} />
-        </Switch>
+        {!show ? (
+          <>
+            <Nav />
+            <Switch>
+              <Route exact path="/" render={(props) => <Header {...props} />} />
+              <Redirect from="/Home" to="/" />
+              <Route
+                path="/Projects"
+                render={(props) => <Projects {...props} />}
+              />
+              <Route path="/About" render={(props) => <About {...props} />} />
+              <Route
+                path="/Contact"
+                render={(props) => <Contact {...props} />}
+              />
+              <Route path="*" render={NotMatch} />
+            </Switch>
+          </>
+        ) : (
+          <>
+            <Devices />
+            <A />
+          </>
+        )}
       </div>
     </Router>
   );

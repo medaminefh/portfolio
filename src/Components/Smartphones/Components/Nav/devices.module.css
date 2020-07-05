@@ -1,0 +1,64 @@
+.dev {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 750ms ease-in-out;
+}
+
+.show .dev {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.dev .nav {
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  max-width: 0;
+}
+
+.show .dev .nav {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.dev nav ul {
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #37475f;
+  justify-content: space-around;
+  transition: all 750ms ease-in-out;
+}
+
+.show .dev nav ul {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.dev .nav ul li {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  max-width: 0;
+  transition: all 750ms ease-in-out;
+}
+
+.show .dev .nav ul li {
+  max-width: 100%;
+}
+
+.show .dev .nav ul li a {
+  font-size: 2rem;
+  line-height: 44px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}

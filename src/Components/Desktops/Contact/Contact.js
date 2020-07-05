@@ -1,8 +1,8 @@
 import React from "react";
-import me from "../../asset/me2.jpg";
-import { resumer } from "../../resume";
+import me from "../../../asset/me2.jpg";
+import { resumer } from "../../../resume";
 const Contact = () => {
-  const { email } = resumer;
+  const { email, linkedIn, github } = resumer;
   return (
     <div className="lg:flex-row-reverse md:items-center md:flex-row bg-gray-700 flex flex-col justify-evenly w-screen md:h-screen min-h-screen">
       <div className="lg:w-1/4 xl:p-8 mt-10 md:m-0 ">
@@ -27,29 +27,20 @@ const Contact = () => {
             <br className="hidden md:block xl:hidden" />
             <a
               className="lg:text-2xl hover:text-blue-300 text-xl text-blue-500"
-              href="https://www.facebook.com/Mohamed.Amine.NPNG/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Facebook
-            </a>
-            ,{" "}
-            <a
-              className="lg:text-2xl hover:text-blue-300 text-xl text-blue-500"
-              href="https://twitter.com/AmineFhal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
-            </a>
-            , or{" "}
-            <a
-              className="md:text-2xl hover:text-blue-300 text-xl text-blue-500"
-              href="https://www.linkedin.com/in/mohamed-amine-fhal-27a435174/"
+              href={linkedIn}
               target="_blank"
               rel="noopener noreferrer"
             >
               LinkedIn
+            </a>
+            ,{" "}
+            <a
+              className="lg:text-2xl hover:text-blue-300 text-xl text-blue-500"
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
             </a>
             .
           </h4>
