@@ -18,7 +18,7 @@ const Header = () => {
         <span className=" text-orange-600 text-6xl uppercase">Welcome</span> To
         My Portfolio
       </h2>
-      <p className="text-5xl pt-10 pb-10">
+      <p className="uppercase text-5xl pt-10 pb-10">
         Web developer{" "}
         <span className="text-5xl" role="img" aria-label="laptop">
           💻
@@ -26,7 +26,7 @@ const Header = () => {
       </p>
       <div className="mt-10 flex justify-center">
         <a
-          className="w-2/5 p-4 text-4xl hover:bg-blue-400 bg-blue-300 border-2 border-gray-600 rounded-md"
+          className="uppercase w-2/5 p-4 text-4xl hover:bg-blue-400 bg-blue-300 border-2 border-gray-600 rounded-md"
           href="#About"
         >
           About Me{" "}

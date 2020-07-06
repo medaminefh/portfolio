@@ -5,7 +5,7 @@ const Projects = () => {
   const { works } = resumer;
 
   return (
-    <section id="Projects" className="bg-blue-900 pb-10 pt-24 min-w-screen">
+    <section id="Projects" className="bg-blue-900 pb-10 pt-16 min-w-screen">
       <h2 className="uppercase text-center text-4xl text-blue-200 pb-10">
         My Work{" "}
         <span className="text-4xl" role="img" aria-label="hamer">
