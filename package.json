@@ -1,6 +1,6 @@
 {
-  "name": "portfolio2",
-  "version": "0.1.0",
+  "name": "portfolio",
+  "version": "0.1.1",
   "homepage": "http://medaminefh.github.io/portfolio",
   "private": true,
   "dependencies": {
