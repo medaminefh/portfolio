@@ -1,6 +1,7 @@
 import React from "react";
 import { resumer } from "../../../../resume";
 import med from "../../../../asset/me2.jpg";
+
 const About = () => {
   const { name, languages, age, nationality } = resumer;
   return (

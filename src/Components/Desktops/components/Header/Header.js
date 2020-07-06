@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { stick } from "../../../../App";
 
 const Header = () => {
+  const { setSticky } = useContext(stick);
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      const scroll = e.target.scrollingElement.scrollTop;
+      scroll >= 400 ? setSticky(true) : setSticky(false);
+    });
+  });
   return (
     <header
-      id="Header"
+      id="Home"
       className="bg-blue-900 pt-4 md:p-0 center flex flex-col justify-center min-h-screen min-w-screen text-center"
     >
       <h2 className="text-6xl">

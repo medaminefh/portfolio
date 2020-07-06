@@ -45,6 +45,7 @@ nav ul li a {
   font-weight: 750;
   font-size: 1.3rem;
   position: relative;
+  text-transform: uppercase;
   letter-spacing: 3px;
   color: #f1faee;
 }
