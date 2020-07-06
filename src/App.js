@@ -1,21 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import "./App.css";
-import { App as A } from "./Components/Smartphones/App";
-import {
-  NotMatch,
-  Contact,
-  About,
-  Nav,
-  Header,
-  Projects,
-  Devices,
-} from "./Components";
-import {
-  Switch,
-  HashRouter as Router,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { A, B } from "./Components";
+import { Nav } from "./Components/Desktops/components/Nav/Nav";
+import { Devices } from "./Components/Smartphones/Components/Nav/devices";
 
 function App() {
   const [show, setShow] = useState("");
@@ -27,34 +14,19 @@ function App() {
     });
   }, [show]);
   return (
-    <Router>
-      <div className="App">
-        {!show ? (
-          <>
-            <Nav />
-            <Switch>
-              <Route exact path="/" render={(props) => <Header {...props} />} />
-              <Redirect from="/Home" to="/" />
-              <Route
-                path="/Projects"
-                render={(props) => <Projects {...props} />}
-              />
-              <Route path="/About" render={(props) => <About {...props} />} />
-              <Route
-                path="/Contact"
-                render={(props) => <Contact {...props} />}
-              />
-              <Route path="*" render={NotMatch} />
-            </Switch>
-          </>
-        ) : (
-          <>
-            <Devices />
-            <A />
-          </>
-        )}
-      </div>
-    </Router>
+    <Fragment>
+      {!show ? (
+        <>
+          <Nav />
+          <A />
+        </>
+      ) : (
+        <>
+          <Devices />
+          <B />
+        </>
+      )}
+    </Fragment>
   );
 }
 

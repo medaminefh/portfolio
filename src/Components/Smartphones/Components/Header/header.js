@@ -20,7 +20,7 @@ const Header = () => {
       </p>
       <div className="mt-10 flex justify-center">
         <a
-          className="md:w-1/3 lg:w-2/5 p-4 text-3xl hover:bg-blue-200 bg-blue-300 border-2 border-gray-600 rounded-md"
+          className="md:w-1/3 lg:w-2/5 p-4 text-3xl bg-blue-300 border-2 border-gray-600 rounded-md"
           href="#About"
         >
           About Me{" "}

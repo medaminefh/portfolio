@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Project, Header, Contact } from "./Components";
+import { Header, About, Project, Contact } from "./components";
 
 const App = () => {
   return (

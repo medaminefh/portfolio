@@ -21,7 +21,7 @@ nav {
 .logo::before {
   content: "";
   position: absolute;
-  background-image: url("../../../asset/star.png");
+  background-image: url("../../../../asset/star.png");
   background-position: center;
   background-repeat: no-repeat;
   right: -3.5rem;
