@@ -24,7 +24,7 @@ const About = () => {
       </div>
       <div
         style={{ lineHeight: "3.4rem" }}
-        className="pt-8 pr-6 pl-6 mt-3 pb-8"
+        className="pt-8 pr-4 pl-4 mt-3 pb-8"
       >
         <p className=" md:text-3xl text-black-200 text-2xl">
           I'm {age} Years Old. <br />
@@ -33,7 +33,7 @@ const About = () => {
           I've Learned from bunch of Resources Such as <br /> FreeCodeCamp |
           Udemy | Udacity | Scrimba | Youtube , and much more . . .
         </p>
-        <h4 className="uppercase text-blue-200 text-3xl">
+        <h4 className="uppercase pb-2 text-blue-200 text-3xl">
           What I Know{" "}
           <span className="text-3xl" role="img" aria-label="lamp">
             💡
@@ -43,7 +43,7 @@ const About = () => {
         <div className="flex flex-wrap">
           {languages.map((l) => (
             <p
-              className="md:text-3xl uppercase pr-10 text-black-200 text-2xl pt-3"
+              className="md:text-3xl uppercase p-1 text-black-200 max-w-1/4 text-2xl mr-4 border mb-2"
               key={l}
             >
               {l}{" "}

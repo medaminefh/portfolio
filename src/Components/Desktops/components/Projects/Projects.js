@@ -14,7 +14,7 @@ const Projects = () => {
           🔨
         </span>
       </h2>
-      <div className="flex flex-wrap justify-around">
+      <div className="flex flex-wrap justify-around shadow-2xl">
         {works.map((a) => (
           <a
             title={a.title}

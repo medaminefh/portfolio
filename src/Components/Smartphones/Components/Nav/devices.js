@@ -10,7 +10,7 @@ export const Devices = () => {
   return (
     <div className={show ? classes.show : classes.hide}>
       <button
-        style={{ zIndex: "3", position: "fixed", top: "10px", right: "10px" }}
+        style={{ zIndex: "13", position: "fixed", top: "10px", right: "10px" }}
         className="text-2xl"
         onClick={handleClick}
       >
@@ -36,7 +36,7 @@ export const Devices = () => {
         )}
       </button>
       <div className={classes.dev}>
-        <nav className={classes.nav}>
+        <nav>
           <ul>
             {links.map((a, i) => (
               <li key={i}>

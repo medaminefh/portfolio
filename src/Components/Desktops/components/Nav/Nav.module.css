@@ -1,4 +1,4 @@
-nav {
+.nav {
   top: 0;
   display: flex;
   min-width: 100vw;
@@ -7,6 +7,8 @@ nav {
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
+  min-height: 3.75rem;
+  box-shadow: 0 4px 52px rgb(146, 156, 201);
   max-height: 5rem;
   border-bottom: solid rgba(230, 212, 230, 0.933) 2px;
   z-index: 2;
@@ -14,6 +16,7 @@ nav {
 }
 
 .logo {
+  display: inline-block;
   font-size: 2.7rem;
   position: relative;
   color: #ccc;
@@ -29,19 +32,18 @@ nav {
   height: 60px;
 }
 
-nav ul {
-  list-style: none;
+.nav ul {
   display: flex;
   width: 75%;
   justify-content: space-around;
 }
 
-nav ul li {
+.nav ul li {
   padding: 0;
   margin: 0;
 }
 
-nav ul li a {
+.nav ul li a {
   font-weight: 750;
   font-size: 1.3rem;
   position: relative;
@@ -50,19 +52,19 @@ nav ul li a {
   color: #f1faee;
 }
 
-nav ul li a::before {
+.nav ul li a::before {
   content: "";
   position: absolute;
   width: calc(100% + 18px);
   transform: scale(0);
   transform-origin: left;
   bottom: -3px;
-  height: 2px;
+  height: 3px;
   background-color: #a8dadc;
   transition: 350ms ease-in-out 20ms;
 }
 
-nav ul li a:hover::before {
+.nav ul li a:hover::before {
   transform-origin: right;
   transform: scale(1);
 }

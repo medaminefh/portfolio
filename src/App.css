@@ -14,7 +14,10 @@ html {
 }
 
 a,
-button {
+button,
+li,
+ul {
+  list-style: none;
   user-select: none;
   text-decoration: none;
 }
