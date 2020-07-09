@@ -7,7 +7,7 @@ const Header = () => {
       className="bg-blue-900 pt-4 center flex flex-col justify-center min-h-screen min-w-screen text-center"
     >
       <h2 className="text-3xl lg:text-5xl">
-        <span className="md:text-5xl lg:text-6xl uppercase text-4xl text-orange-600">
+        <span className="md:text-5xl lg:text-6xl uppercase text-4xl text-teal-400">
           Welcome
         </span>{" "}
         To My Portfolio

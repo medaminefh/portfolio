@@ -8,7 +8,7 @@ const About = () => {
     <section id="About" className=" pt-10 bg-blue-800">
       <div className=" md:flex-row md:items-center flex flex-col justify-around h-screen">
         <div>
-          <h2 className="md:p-0 md:text-6xl text-left text-orange-500 text-4xl pl-8 uppercase">
+          <h2 className="md:p-0 md:text-6xl text-left text-teal-400 text-4xl pl-8 uppercase">
             Who Am I ?
           </h2>
           <p className="md:text-5xl text-3xl text-center">{name}</p>
@@ -33,7 +33,7 @@ const About = () => {
           I've Learned from bunch of Resources Such as <br /> FreeCodeCamp |
           Udemy | Udacity | Scrimba | Youtube , and much more . . .
         </p>
-        <h4 className="uppercase pb-2 text-blue-200 text-3xl">
+        <h4 className="uppercase pb-2 text-teal-400 text-3xl">
           What I Know{" "}
           <span className="text-3xl" role="img" aria-label="lamp">
             💡
