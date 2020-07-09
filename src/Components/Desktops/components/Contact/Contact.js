@@ -1,20 +1,23 @@
 import React from "react";
 import { resumer } from "../../../../resume";
+import me3 from "../../../../asset/me3.svg";
+import "./Contact.css";
 
 const Contact = () => {
   const { email, linkedIn, github } = resumer;
   return (
     <section
       id="Contact"
-      className="text-center bg-gray-700 flex flex-col justify-evenly min-w-screen min-h-screen shadow-2xl shadow-inner"
+      className="text-center flex flex-col justify-evenly min-w-screen min-h-screen shadow-2xl shadow-inner"
     >
-      <h2 className="uppercase xl:text-6xl text-5xl pb-6 text-white">
+      <span id="bg"></span>
+      <h2 className="ctm uppercase xl:text-6xl text-5xl text-white">
         Contact Me{" "}
         <span className="text-5xl xl:text-6xl" role="img" aria-label="Email">
           📨
         </span>{" "}
       </h2>
-      <div className="xl:w-2/3 border-4 p-8 border-blue-300 self-center w-4/5 flex flex-col items-center">
+      <div className="xl:w-2/3 border-4 p-8 border-blue-200 self-center w-4/5 flex flex-col items-center">
         <h2 className="pt-5 text-3xl">
           The best way to contact me is via Email:
           <p className="text-3xl select-all">{email}</p>
@@ -26,7 +29,7 @@ const Contact = () => {
           </span>{" "}
           such as <br className="xl:hidden" />
           <a
-            className="text-3xl hover:text-blue-300 text-blue-500"
+            className="text-3xl uppercase hover:text-blue-300 text-blue-500"
             href={linkedIn}
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +38,7 @@ const Contact = () => {
           </a>
           ,{" "}
           <a
-            className="text-3xl hover:text-blue-300 text-blue-500"
+            className="text-3xl uppercase hover:text-blue-300 text-blue-500"
             href={github}
             target="_blank"
             rel="noopener noreferrer"
@@ -45,6 +48,7 @@ const Contact = () => {
           .
         </h4>
       </div>
+      <img id="ct" src={me3} alt="" />
     </section>
   );
 };

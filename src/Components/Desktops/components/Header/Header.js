@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { stick } from "../../../../App";
+import "./Header.css";
 
 const Header = () => {
   const { setSticky } = useContext(stick);
@@ -12,11 +13,12 @@ const Header = () => {
   return (
     <header
       id="Home"
-      className="bg-blue-900 pt-4 md:p-0 center flex flex-col justify-center min-h-screen min-w-screen text-center"
+      className="pt-4 md:p-0 center flex flex-col justify-center min-h-screen min-w-screen text-center"
     >
+      <span id="bg"></span>
       <h2 className="text-6xl">
-        <span className=" text-orange-600 text-6xl uppercase">Welcome</span> To
-        My Portfolio
+        <span className=" text-blue-200 text-6xl uppercase">Welcome</span> To My
+        Portfolio
       </h2>
       <p className="uppercase text-5xl pt-10 pb-10">
         Web developer{" "}

@@ -21,3 +21,7 @@ ul {
   user-select: none;
   text-decoration: none;
 }
+
+body {
+  background-image: linear-gradient(90deg, #222831, #393e46, #596e79);
+}

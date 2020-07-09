@@ -1,0 +1,56 @@
+#Projects {
+  position: relative;
+}
+
+#Projects #bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../../asset/bg/guywithlaptop.jpg");
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#Projects #bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-image: linear-gradient(-180deg, #222831, #393e46, #596e79);
+}
+
+#Projects .card {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.767);
+}
+
+#Projects .card h2 {
+  transition: all 0.5s ease-in-out;
+}
+
+#Projects .card:hover h2 {
+  position: absolute;
+  color: transparent;
+}
+
+#Projects .card img {
+  transition: all 0.5s ease-in-out;
+}
+
+#Projects .card:hover img {
+  transform: scale(1.5) rotate(180deg);
+}
+
+#Projects .card h2 {
+  color: #555;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

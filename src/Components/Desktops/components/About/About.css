@@ -1,0 +1,98 @@
+#About {
+  position: relative;
+}
+
+#About #bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("../../../../asset/bg/bigface.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#About #bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-image: linear-gradient(40deg, #222831, #393e46, #596e79);
+}
+
+#About .who h2,
+#About .who h2 > span {
+  font-size: 5.5rem;
+}
+
+#About .who h3 {
+  position: relative;
+  margin-top: 3rem;
+  color: #011;
+  font-size: 5.3rem;
+  text-shadow: 3px 12px 20px #ccc;
+}
+
+#About .who h3::before {
+  content: "";
+  position: absolute;
+  top: 47%;
+  left: -100%;
+  width: 100%;
+  height: 1rem;
+  z-index: -1;
+  background-color: rgba(255, 230, 0, 0.822);
+}
+
+#About .who h3::after {
+  content: "";
+  position: absolute;
+  top: 47%;
+  right: -100%;
+  width: 100%;
+  height: 1rem;
+  z-index: -1;
+  background-color: rgba(255, 230, 0, 0.822);
+}
+
+#About .desc {
+  max-width: 80vw;
+}
+
+#About .desc > p {
+  padding: 1rem 0 1rem 1rem;
+  max-width: 75vw;
+  border: solid 2px #ede;
+  background-color: rgba(204, 204, 204, 0.4);
+  line-height: 3.3rem;
+  font-size: 2rem;
+}
+
+#About .languages p {
+  position: relative;
+  margin: 1rem 2rem 1rem 0;
+}
+
+#About .languages p::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 2px solid rgba(204, 204, 204, 0.856);
+  animation: f 2s infinite linear;
+}
+
+@keyframes f {
+  to {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
