@@ -1,6 +1,5 @@
 import React from "react";
 import { resumer } from "../../../../resume";
-import med from "../../../../asset/me2.jpg";
 import "./About.css";
 
 const About = () => {
@@ -30,7 +29,7 @@ const About = () => {
         </p>
         <h4 className="uppercase pt-4 pb-4 text-blue-200 text-5xl">
           I Know{" "}
-          <span className="text-3xl" role="img" aria-label="lamp">
+          <span className="text-4xl" role="img" aria-label="lamp">
             💡
           </span>{" "}
           :

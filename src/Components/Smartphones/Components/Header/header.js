@@ -1,12 +1,14 @@
 import React from "react";
+import "./header.css";
 
 const Header = () => {
   return (
     <header
       id="Home"
-      className="bg-blue-900 pt-4 center flex flex-col justify-center min-h-screen min-w-screen text-center"
+      className="pt-4 center flex flex-col justify-center min-h-screen min-w-screen text-center"
     >
-      <h2 className="text-3xl lg:text-5xl">
+      <span id="smbg"></span>
+      <h2 className="text-4xl lg:text-6xl">
         <span className="md:text-5xl lg:text-6xl uppercase text-4xl text-teal-400">
           Welcome
         </span>{" "}

@@ -1,10 +1,8 @@
-import React, { useContext, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import classes from "./Nav.module.css";
-import { stick } from "../../../../App";
 
-export const Nav = () => {
+export const Nav = ({ sticky }) => {
   const nav = useRef("");
-  const { sticky } = useContext(stick);
 
   useEffect(() => {
     if (sticky) {

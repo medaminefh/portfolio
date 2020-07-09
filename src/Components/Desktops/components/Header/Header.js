@@ -1,9 +1,7 @@
-import React, { useContext, useEffect } from "react";
-import { stick } from "../../../../App";
+import React, { useEffect } from "react";
 import "./Header.css";
 
-const Header = () => {
-  const { setSticky } = useContext(stick);
+const Header = ({ setSticky }) => {
   useEffect(() => {
     window.addEventListener("scroll", (e) => {
       const scroll = e.target.scrollingElement.scrollTop;

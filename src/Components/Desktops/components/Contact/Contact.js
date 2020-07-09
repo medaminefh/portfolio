@@ -17,7 +17,7 @@ const Contact = () => {
           📨
         </span>{" "}
       </h2>
-      <div className="xl:w-2/3 border-4 p-8 border-blue-200 self-center w-4/5 flex flex-col items-center">
+      <div className=" select-none xl:w-2/3 border-4 p-8 border-blue-200 self-center w-4/5 flex flex-col items-center">
         <h2 className="pt-5 text-3xl">
           The best way to contact me is via Email:
           <p className="text-3xl select-all">{email}</p>
@@ -48,7 +48,7 @@ const Contact = () => {
           .
         </h4>
       </div>
-      <img id="ct" src={me3} alt="" />
+      <img draggable="false" id="ct" src={me3} alt="" />
     </section>
   );
 };

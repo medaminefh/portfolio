@@ -23,5 +23,6 @@ ul {
 }
 
 body {
-  background-image: linear-gradient(90deg, #222831, #393e46, #596e79);
+  /* overflow-x: hidden !important; */
+  background-image: linear-gradient(90deg, #222831, #393e46);
 }

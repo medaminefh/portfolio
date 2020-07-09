@@ -1,10 +1,8 @@
-import React, { useState, useEffect, Fragment, createContext } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import "./App.css";
 import { A, B } from "./Components";
 import { Nav } from "./Components/Desktops/components/Nav/Nav";
 import { Devices } from "./Components/Smartphones/Components/Nav/devices";
-
-export const stick = createContext();
 
 const App = () => {
   const [show, setShow] = useState("");
@@ -18,10 +16,10 @@ const App = () => {
   return (
     <Fragment>
       {!show ? (
-        <stick.Provider value={{ sticky, setSticky }}>
-          <Nav />
-          <A />
-        </stick.Provider>
+        <>
+          <Nav sticky={sticky} setSticky={setSticky} />
+          <A setSticky={setSticky} />
+        </>
       ) : (
         <>
           <Devices />

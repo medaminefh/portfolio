@@ -32,6 +32,10 @@
 }
 
 #Projects .card h2 {
+  color: #555;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   transition: all 0.5s ease-in-out;
 }
 
@@ -46,11 +50,4 @@
 
 #Projects .card:hover img {
   transform: scale(1.5) rotate(180deg);
-}
-
-#Projects .card h2 {
-  color: #555;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }

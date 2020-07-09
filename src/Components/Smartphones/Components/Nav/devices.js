@@ -10,7 +10,7 @@ export const Devices = () => {
   return (
     <div className={show ? classes.show : classes.hide}>
       <button
-        style={{ zIndex: "13", position: "fixed", top: "10px", right: "10px" }}
+        style={{ zIndex: "23", position: "fixed", top: "10px", right: "10px" }}
         className="text-2xl"
         onClick={handleClick}
       >
