@@ -12,7 +12,7 @@ const Contact = () => {
       <span id="smbg"></span>
       <h2 className="smctm text-5xl tracking-widest uppercase pb-6 border-b-2 border-white text-blue-200">
         Contact Me{" "}
-        <span className="text-4xl" role="img" aria-label="Email">
+        <span className="text-5xl" role="img" aria-label="Email">
           📨
         </span>{" "}
       </h2>
