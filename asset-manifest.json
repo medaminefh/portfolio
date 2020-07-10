@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4402affa.chunk.css",
-    "main.js": "/portfolio/static/js/main.737d9032.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.737d9032.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.e4af2d89.chunk.css",
+    "main.js": "/portfolio/static/js/main.30113d3a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.30113d3a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f4f2abbf.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f4f2abbf.js.map",
-    "static/js/2.4da2c7e1.chunk.js": "/portfolio/static/js/2.4da2c7e1.chunk.js",
-    "static/js/2.4da2c7e1.chunk.js.map": "/portfolio/static/js/2.4da2c7e1.chunk.js.map",
+    "static/js/2.71b625ec.chunk.js": "/portfolio/static/js/2.71b625ec.chunk.js",
+    "static/js/2.71b625ec.chunk.js.map": "/portfolio/static/js/2.71b625ec.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.f9598dd4d0a323db97992535647e854e.js": "/portfolio/precache-manifest.f9598dd4d0a323db97992535647e854e.js",
+    "precache-manifest.9e3d32200c196d1158a9964ec33cbce5.js": "/portfolio/precache-manifest.9e3d32200c196d1158a9964ec33cbce5.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.4402affa.chunk.css.map": "/portfolio/static/css/main.4402affa.chunk.css.map",
-    "static/js/2.4da2c7e1.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4da2c7e1.chunk.js.LICENSE.txt",
-    "static/media/me2.jpg": "/portfolio/static/media/me2.56b5c759.jpg"
+    "static/css/main.e4af2d89.chunk.css.map": "/portfolio/static/css/main.e4af2d89.chunk.css.map",
+    "static/js/2.71b625ec.chunk.js.LICENSE.txt": "/portfolio/static/js/2.71b625ec.chunk.js.LICENSE.txt",
+    "static/media/about.css": "/portfolio/static/media/darkorangewood.f8e7be9e.jpg",
+    "static/media/contact.css": "/portfolio/static/media/bluewood.45044baa.jpg",
+    "static/media/projects.css": "/portfolio/static/media/coloredwood.76725951.jpg",
+    "static/media/header.css": "/portfolio/static/media/guysmilingwithlaptop.4a927112.jpg",
+    "static/media/Project.css": "/portfolio/static/media/guywithlaptop.cb0e982d.jpg",
+    "static/media/me3.svg": "/portfolio/static/media/me3.ac240b30.svg",
+    "static/media/Contact.css": "/portfolio/static/media/phone.ff471f58.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f4f2abbf.js",
-    "static/js/2.4da2c7e1.chunk.js",
-    "static/css/main.4402affa.chunk.css",
-    "static/js/main.737d9032.chunk.js"
+    "static/js/2.71b625ec.chunk.js",
+    "static/css/main.e4af2d89.chunk.css",
+    "static/js/main.30113d3a.chunk.js"
   ]
 }
