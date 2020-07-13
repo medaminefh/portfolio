@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section id="About">
       <div className="smme min-h-screen min-w-screen flex flex-col items-center justify-evenly ">
-        <span id="smbg"></span>
+        <span id="bg"></span>
         <h2 className="md:p-0 text-center text-teal-400 uppercase">
           Who Am I ?{" "}
           <span className="text-4xl" role="img" aria-label="question">
@@ -38,7 +38,7 @@ const About = () => {
         <div className="smlanguages flex flex-wrap">
           {languages.map((l) => (
             <p
-              className="md:text-3xl uppercase p-1 text-black-200 max-w-1/4 text-2xl mr-4 border mb-2"
+              className="md:text-3xl uppercase p-1 text-black-200 max-w-1/4 text-2xl mr-4 mb-2"
               key={l}
             >
               {l}{" "}

@@ -7,7 +7,7 @@ const Header = () => {
       id="Home"
       className="pt-4 center flex flex-col justify-center min-h-screen min-w-screen text-center"
     >
-      <span id="smbg"></span>
+      <span id="bg"></span>
       <h2 className="text-4xl lg:text-6xl">
         <span className="md:text-5xl lg:text-6xl uppercase text-4xl text-teal-400">
           Welcome

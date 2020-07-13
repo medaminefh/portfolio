@@ -14,9 +14,11 @@ const Header = ({ setSticky }) => {
       className="pt-4 md:p-0 center flex flex-col justify-center min-h-screen min-w-screen text-center"
     >
       <span id="bg"></span>
-      <h2 className="text-6xl">
-        <span className=" text-blue-200 text-6xl uppercase">Welcome</span> To My
-        Portfolio
+      <h2 className="text-6xl text-black-100">
+        <span className="yellow text-yellow-500 text-6xl uppercase">
+          Welcome
+        </span>{" "}
+        To My Portfolio
       </h2>
       <p className="uppercase text-5xl pt-10 pb-10">
         Web developer{" "}

@@ -1,5 +1,6 @@
 #Home {
   position: relative;
+  overflow: hidden !important;
 }
 
 #Home #bg {
@@ -8,11 +9,27 @@
   height: 100%;
   top: 0;
   left: 0;
+  transform: rotate(2deg);
   background-image: url("../../../../asset/bg/guysmilingwithlaptop.jpg");
   background-position: center right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 120%;
   z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1100px) {
+  #Home #bg {
+    background-size: cover;
+    background-position-x: center;
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #Home #bg {
+    background-position-x: 80%;
+  }
 }
 
 #Home #bg::before {
@@ -24,4 +41,14 @@
   height: 100%;
   opacity: 0.7;
   background-image: linear-gradient(40deg, #222831, #393e46, #596e79);
+}
+
+#Home span.yellow {
+  position: relative;
+}
+
+#Home h2,
+#Home p {
+  user-select: none;
+  color: rgba(255, 255, 255, 0.808);
 }

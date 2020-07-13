@@ -2,6 +2,12 @@
   position: relative;
 }
 
+#About h2,
+#About h3,
+#About h4,
+#About p {
+  user-select: none;
+}
 #About #bg {
   position: absolute;
   width: 100%;
@@ -26,6 +32,19 @@
   background-image: linear-gradient(40deg, #222831, #393e46, #596e79);
 }
 
+@media screen and (max-width: 1100px) {
+  #About #bg {
+    background-size: cover;
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #About #bg {
+    background-position-x: 10%;
+  }
+}
+
 #About .who h2,
 #About .who h2 > span {
   font-size: 5.5rem;
@@ -34,7 +53,7 @@
 #About .who h3 {
   position: relative;
   margin-top: 3rem;
-  color: #011;
+  color: #bee3f8;
   font-size: 5.3rem;
   text-shadow: 3px 12px 20px #ccc;
 }
@@ -77,6 +96,7 @@
 #About .languages p {
   position: relative;
   margin: 1rem 2rem 1rem 0;
+  animation: a 2.3s infinite linear;
 }
 
 #About .languages p::before {
@@ -87,12 +107,18 @@
   top: 0;
   left: 0;
   border: 2px solid rgba(204, 204, 204, 0.856);
-  animation: f 2s infinite linear;
+  animation: f 2.3s infinite linear;
 }
 
 @keyframes f {
   to {
     transform: scale(1.2);
     opacity: 0;
+  }
+}
+
+@keyframes a {
+  to {
+    color: #ede;
   }
 }

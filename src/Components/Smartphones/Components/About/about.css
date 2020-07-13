@@ -4,29 +4,8 @@
 
 #About .smme {
   position: relative;
-}
-
-#About .smme #smbg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  background-image: url("../../../../asset/bg/bigface.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#About .smme #smbg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.7;
-  background-image: linear-gradient(40deg, #222831, #393e46, #596e79);
 }
 
 #About .smme h2 {
@@ -63,6 +42,11 @@
   position: relative;
 }
 
+#About .smab > p {
+  background-color: #616b703b;
+  color: #ccc;
+}
+
 #About .smab .smabs {
   position: absolute;
   top: 0;
@@ -89,5 +73,8 @@
 
 #About .smlanguages p {
   position: relative;
+  background-color: #616b703b;
   margin: 0.5rem 0.3rem 0.5rem 0;
+  color: #ccc;
+  border: 1.5px solid #ccc;
 }

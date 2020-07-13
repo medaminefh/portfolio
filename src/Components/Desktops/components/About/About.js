@@ -8,7 +8,7 @@ const About = () => {
     <section id="About" className="pt-10 min-w-screen">
       <span id="bg"></span>
       <div className="who min-h-screen flex flex-col justify-center items-center min-w-screen">
-        <h2 className="uppercase text-blue-200">
+        <h2 className="uppercase text-yellow-500">
           Who Am I ?{" "}
           <span role="img" aria-label="question">
             🤔
@@ -37,7 +37,7 @@ const About = () => {
         <div className="languages flex flex-wrap">
           {languages.map((l) => (
             <p
-              className="uppercase max-w-1/3 p-2 border text-3xl text-black-200"
+              className="uppercase max-w-1/3 p-2 text-3xl text-blue-300"
               key={l}
             >
               {l}{" "}

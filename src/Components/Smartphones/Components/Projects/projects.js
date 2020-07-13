@@ -7,7 +7,7 @@ const Projects = () => {
 
   return (
     <section id="Projects" className="pb-10 pt-16 min-w-screen">
-      <span id="smbg"></span>
+      <span id="bg"></span>
       <h2 className="uppercase text-center text-5xl text-blue-200 pb-10">
         My Work{" "}
         <span className="text-5xl" role="img" aria-label="hamer">
