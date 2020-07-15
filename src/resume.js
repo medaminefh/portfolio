@@ -7,6 +7,7 @@ import timer from "./asset/timer.png";
 import clock from "./asset/clock.png";
 import tictac from "./asset/tictac.png";
 import quotes from "./asset/quotes.png";
+import age from "./asset/age.png";
 
 export const resumer = {
   name: "Med Amine Fh",
@@ -26,8 +27,8 @@ export const resumer = {
     "ExpressJs",
     "Bootstrap",
     "JavaScript",
-    "TailwindCss",
     "Material Ui",
+    "TailwindCss",
     "MaterializeCss",
   ],
   works: [
@@ -93,6 +94,13 @@ export const resumer = {
       img: quotes,
       alt: "Quotes",
       title: "Quotes Generator",
+    },
+    {
+      name: "Age Calculator",
+      site: "https://medaminefh.github.io/Agecalculator/getAge.html",
+      img: age,
+      alt: "Calendar",
+      title: "Age Calculator",
     },
   ],
 };

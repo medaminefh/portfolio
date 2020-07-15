@@ -6,6 +6,7 @@ export const Devices = () => {
   const handleClick = () => {
     setShow((prev) => !prev);
   };
+
   const links = ["Home", "About", "Projects", "Contact"];
   return (
     <div className={show ? classes.show : classes.hide}>
