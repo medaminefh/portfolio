@@ -1,49 +1,70 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-html {
-  height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-  background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?dpr=1&auto=format&fit=crop&w=1080&h=608&q=80&cs=tinysrgb&crop=);
-  background-size: cover;
-  background-position: center;
-  overflow-y:hidden;
-  color: white;
-}
-h1 {
-  font-size: 5em;
-  font-weight: bold;
-  font-family: "Space Mono", monospace;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);
-  text-shadow: 0px 8px 13px rgba(0, 0, 0, 0.1);
-  text-shadow: 0px 18px 23px rgba(0, 0, 0, 0.1);
-}
-h3 {
   font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(34, 34, 34);
+  background-image: url(./assets/rocket.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: bottom right;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+body .home {
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+h3 {
+  z-index: 3;
+  font-size: 3rem;
+  font-weight: 550;
   font-family: "Raleway", sans-serif;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);
   text-shadow: 0px 8px 13px rgba(0, 0, 0, 0.1);
   text-shadow: 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
-#content {
-  text-align: left;
-  padding-top: 15%;
+
+body .home .btns {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
-hr {
-  /* a horizontal rule can really help organize and 'clean up' landing pages... */
-  visibility: hidden;
-  width: 400px;
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-.btn-default {
-  font-family: "Space Mono", monospace;
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 2em;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  z-index: 2;
 }
 
 ul.social__media {
-position:absolute;
-bottom:0;
-  margin-left:50%;
+  margin: 0;
   padding: 0;
   display: inline-block;
   margin-top: 15px;
@@ -56,15 +77,9 @@ ul.social__media li {
 ul.social__media li a {
   background-color: transparent;
   font-size: 30px;
-  color:#222;
   text-align: center;
 }
 
-
-.BgAnimation__svg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -1;
+ul.social__media li a i {
+  color: #ccc;
 }
-
