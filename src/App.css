@@ -11,24 +11,27 @@
 body {
   font-size: 17px;
   font-family: "Poppins", sans-serif;
-  background-color: rgb(34, 34, 34);
-  background-image: url(./assets/rocket.svg);
+
+  background-image: url(./assets/bg.gif);
   background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: bottom right;
+  background-position: top right;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   body {
-    background-size: cover;
+    background-image: url(./assets/bg.jpeg);
     background-position: top left;
+  }
+
+  body .home h3 {
+    color: #ccc;
   }
 }
 
 body .home {
   min-height: 100vh;
   position: relative;
-  color: #fff;
+  color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
