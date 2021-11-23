@@ -26,6 +26,7 @@ body {
   body .home h3 {
     color: #ccc;
   }
+
 }
 
 body .home {
@@ -85,4 +86,5 @@ ul.social__media li a {
 
 ul.social__media li a i {
   color: #ccc;
+
 }
