@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import About from "./About";
+import Projects from "./Projects";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 const Btns = styled.div`
   display: flex;
@@ -11,27 +15,13 @@ const Btns = styled.div`
 
 const Home = () => {
   return (
-    <div className="home">
-      <h3>Med Amine Fh</h3>
-
-      <Btns>
-        <a
-          target="_blank"
-          rel="noreferer noopener"
-          href="https://medaminefh.github.io/blogs"
-          className="btn btn-outline-primary"
-        >
-          Blogs
-        </a>
-        <a
-          target="_blank"
-          rel="noreferer noopener"
-          href="https://medaminefh.github.io/instag"
-          className="btn btn-outline-secondary"
-        >
-          InstaClone
-        </a>
-      </Btns>
+    <div>
+      <Nav />
+      <div>
+        <About />
+        <Projects />
+      </div>
+      <Footer />
     </div>
   );
 };

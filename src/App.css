@@ -1,5 +1,3 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 * {
@@ -7,6 +5,7 @@
   margin: 0;
   padding: 0;
   user-select: none;
+  letter-spacing: 1.7px;
 }
 
 ul {
@@ -23,44 +22,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-body .home {
-  min-height: 100vh;
-  max-width: 80%;
-  margin: 0 auto;
-  background-image: url(./assets/bg.gif);
-
-  background-repeat: no-repeat;
-  background-position: top right;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 2em;
+body img {
+  -webkit-user-drag: none;
 }
 
-h3 {
-  z-index: 3;
-  font-size: 3rem;
-  text-align: center;
-  font-weight: 550;
-  font-family: "Raleway", sans-serif;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);
-  text-shadow: 0px 8px 13px rgba(0, 0, 0, 0.1);
-  text-shadow: 0px 18px 23px rgba(0, 0, 0, 0.1);
-}
-
-body .home .btns {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+body section {
+  min-height: 70vh;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   padding: 2em;
   display: flex;
   color: #fff;
@@ -87,30 +58,4 @@ ul.social__media li a {
 
 ul.social__media li a i {
   color: #ccc;
-}
-
-@media (max-width: 600px) {
-  body {
-    background-image: url(./assets/bg.jpeg);
-    background-position: top left;
-  }
-
-  body::before {
-    background: none;
-  }
-
-  body .home {
-    background-image: none;
-  }
-
-  body .home div {
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  body .home h3 {
-    color: #ccc;
-  }
 }

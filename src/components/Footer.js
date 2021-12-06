@@ -1,8 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+import { Icons } from "./utils";
 
 function Footer() {
   return (
-    <footer className="text-secondary text-center">
+    <footer id="contact" className="text-secondary text-center">
       <ul className="social__media">
         <li>
           <a
@@ -11,7 +13,7 @@ function Footer() {
             href="https://github.com/medaminefh"
             className="text-secondary"
           >
-            <i className="fa fa-github"></i>
+            <Icons color="#2C272E" className="fa fa-github"></Icons>
           </a>
         </li>
         <li>
@@ -21,7 +23,7 @@ function Footer() {
             href="https://twitter.com/medaminefh"
             className="text-secondary"
           >
-            <i className="fa fa-twitter"></i>
+            <Icons color="#94DAFF" className="fa fa-twitter"></Icons>
           </a>
         </li>
         <li>
@@ -31,7 +33,7 @@ function Footer() {
             href="https://www.linkedin.com/in/mohamed-amine-fhal"
             className="text-secondary"
           >
-            <i className="fa fa-linkedin"></i>
+            <Icons color="#000D6B" className="fa fa-linkedin"></Icons>
           </a>
         </li>
       </ul>
