@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { Btn, Icons } from "./utils";
+import { Btn, Icons, Title } from "./utils";
 
 const Project = styled.div`
+  border: 0;
   max-width: 400px;
   width: 100%;
   min-width: 300px;
   margin: 1rem 0;
-
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -webkit-font-smoothing: antialiased;
   transition: 0.3s ease;
 
@@ -20,10 +21,6 @@ const Project = styled.div`
   & a {
     width: 100%;
   }
-`;
-
-const Title = styled.h2`
-  text-align: center;
 `;
 
 const ProjectsSection = styled.section`
@@ -45,8 +42,8 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">Network App</h5>
               <p className="card-text">This is A Tweet like App.</p>
-              <Icons color="#0F2C67" className="fab fa-python"></Icons>
-              <Icons color="#FFCC1D" className="fab fa-js"></Icons>
+              <Icons className="fab fa-python"></Icons>
+              <Icons className="fab fa-js"></Icons>
             </div>
             <Btn
               rel="noreferrer noopener"
@@ -63,7 +60,7 @@ function Projects() {
               <h5 className="card-title">My Blog's App</h5>
               <p className="card-text">My Personal Blog App</p>
 
-              <Icons color="#FFCC1D" className="fab fa-js"></Icons>
+              <Icons className="fab fa-js"></Icons>
             </div>
             <Btn
               rel="noreferrer noopener"
@@ -79,8 +76,8 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">Gallery App</h5>
               <p className="card-text">Load Random Imgs from unsplash.</p>
-              <Icons color="#2F86A6" className="fab fa-react"></Icons>
-              <Icons color="#FFCC1D" className="fab fa-js"></Icons>
+              <Icons className="fab fa-react"></Icons>
+              <Icons className="fab fa-js"></Icons>
             </div>
             <Btn
               rel="noreferrer noopener"

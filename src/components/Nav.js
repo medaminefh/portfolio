@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Me from "../assets/me.jpg";
 
-const Container = styled.div`
+const Container = styled.span`
   position: relative;
   width: 50px;
   height: 50px;

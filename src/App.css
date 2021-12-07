@@ -28,6 +28,7 @@ body img {
 
 body section {
   min-height: 70vh;
+  padding: 2rem 0;
 }
 
 footer {

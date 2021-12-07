@@ -9,6 +9,7 @@ const Important = styled.span`
 
 const AboutMe = styled.div`
   height: 100vh;
+  padding: 0 0.4rem;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -33,19 +34,10 @@ function About() {
         Med Amine Fh, A Self-Taught web developer.{" "}
         <p>
           I Enjoy creating Things with [
-          <Icons
-            title="Python"
-            color="#0F2C67"
-            className="fab fa-python"
-          ></Icons>{" "}
-          <Icons title="JS" color="#FFCC1D" className="fab fa-js"></Icons>{" "}
-          <Icons title="HTML" color="#CD1818" className="fab fa-html5"></Icons>{" "}
-          <Icons
-            title="CSS"
-            color="#396EB0"
-            className="fab fa-css3-alt"
-          ></Icons>
-          ]
+          <Icons title="Python" className="fab fa-python"></Icons>{" "}
+          <Icons title="JS" className="fab fa-js"></Icons>{" "}
+          <Icons title="HTML" className="fab fa-html5"></Icons>{" "}
+          <Icons title="CSS" className="fab fa-css3-alt"></Icons>]
         </p>
         <p>
           I Write on{" "}
