@@ -56,3 +56,20 @@ export const Icons = styled.i`
     }};
   }
 `;
+
+export const Card = styled.div`
+  color: #99a799;
+  text-align: center;
+  font-size: 150px;
+  width: 100%;
+  max-width: 250px;
+`;
+
+export const Cards = styled.div`
+  position: realtive;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+`;

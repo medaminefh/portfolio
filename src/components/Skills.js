@@ -1,22 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { Icons, Title } from "./utils";
-
-const Card = styled.div`
-  color: #99a799;
-  text-align: center;
-  font-size: 150px;
-  width: 100%;
-  max-width: 250px;
-`;
-
-const Cards = styled.div`
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-`;
+import { Icons, Title, Card, Cards } from "./utils";
 
 function Skills() {
   return (

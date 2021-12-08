@@ -5,6 +5,7 @@ import { Btn, Icons, Title } from "./utils";
 const Project = styled.div`
   border: 0;
   max-width: 400px;
+  max-height: 350px;
   width: 100%;
   min-width: 300px;
   margin: 1rem 0;

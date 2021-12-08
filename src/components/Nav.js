@@ -12,6 +12,7 @@ const Container = styled.span`
 
 const Img = styled.img`
   position: absolute;
+  filter: contrast(150%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
