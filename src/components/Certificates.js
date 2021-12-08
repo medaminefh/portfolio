@@ -30,6 +30,7 @@ function Certificates() {
             target="_blank"
           >
             <Img
+              loading={"Lazy"}
               src={
                 "https://drive.google.com/uc?id=1nqW4rdGdXmF39LJ-jsIp4EKuaKjl6eOI"
               }
@@ -43,6 +44,7 @@ function Certificates() {
             target="_blank"
           >
             <Img
+              loading={"Lazy"}
               src={
                 "https://drive.google.com/uc?id=1EmjP-jAGqu7Vp5-0WQXf6VNJas_Y8EgB"
               }
@@ -56,6 +58,7 @@ function Certificates() {
             target="_blank"
           >
             <Img
+              loading={"Lazy"}
               src={
                 "https://drive.google.com/uc?id=1531yU30vFeD-mV8wLArjxziua6u9GC7-"
               }
@@ -69,6 +72,7 @@ function Certificates() {
             target="_blank"
           >
             <Img
+              loading={"Lazy"}
               src={
                 "https://drive.google.com/uc?id=1nQ4NN5Vx3r1AlO97Ge_AuAobMxmKjp8S"
               }
@@ -83,6 +87,7 @@ function Certificates() {
             target="_blank"
           >
             <Img
+              loading={"Lazy"}
               src={
                 "https://drive.google.com/uc?id=1B6riqxVBBQJX5P66aAEevgj7qZ9Vmy8C"
               }
@@ -96,6 +101,7 @@ function Certificates() {
             target="_blank"
           >
             <Img
+              loading={"Lazy"}
               src={
                 "https://drive.google.com/uc?id=1hsifotM8RYpxuzB6DShu1h8nooCGDRll"
               }
