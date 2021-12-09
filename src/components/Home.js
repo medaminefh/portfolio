@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Skills from "./Skills";
 import Certificates from "./Certificates";
+import Articles from "./Articles";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Projects />
         <Skills />
         <Certificates />
+        <Articles />
       </div>
       <Footer />
     </div>
