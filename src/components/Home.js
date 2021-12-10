@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Skills from "./Skills";
 import Certificates from "./Certificates";
 import Articles from "./Articles";
+import ScrollToTop from "./ScrollToTop";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Certificates />
         <Articles />
       </div>
+      <ScrollToTop />
       <Footer />
     </div>
   );

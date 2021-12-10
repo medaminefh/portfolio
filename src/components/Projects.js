@@ -61,7 +61,9 @@ function Projects() {
               <h5 className="card-title">My Blog's App</h5>
               <p className="card-text">My Personal Blog App</p>
 
-              <Icons className="fab fa-js"></Icons>
+              <Icons className="fab fa-react"></Icons>
+              <Icons className="fab fa-node"></Icons>
+              <Icons className="fab fa-database"></Icons>
             </div>
             <Btn
               rel="noreferrer noopener"
@@ -78,12 +80,31 @@ function Projects() {
               <h5 className="card-title">Gallery App</h5>
               <p className="card-text">Load Random Imgs from unsplash.</p>
               <Icons className="fab fa-react"></Icons>
-              <Icons className="fab fa-js"></Icons>
+              <Icons className="fab fa-bootstrap"></Icons>
             </div>
             <Btn
               rel="noreferrer noopener"
               target="_blank"
               href="https://medaminefh.github.io/photosearch/"
+            >
+              Demo
+            </Btn>
+          </div>
+        </Project>
+
+        <Project>
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">instaClone App</h5>
+              <p className="card-text">Instagram Clone App</p>
+              <Icons className="fab fa-react"></Icons>
+              <Icons className="fab fa-bootstrap"></Icons>
+              <Icons className="fab fa-node"></Icons>
+            </div>
+            <Btn
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://medaminefh.github.io/instag/"
             >
               Demo
             </Btn>
@@ -96,9 +117,7 @@ function Projects() {
         rel="noreferrer noopener"
         target="_blank"
       >
-        More <Icons className="far fa-circle"></Icons>
-        <Icons className="far fa-circle"></Icons>
-        <Icons className="far fa-circle"></Icons>
+        More
       </Btn>
     </section>
   );

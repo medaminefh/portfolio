@@ -19,6 +19,7 @@ export const Btn = styled.a`
 const langs = {
   html: "#e34f26",
   css: "#396EB0",
+  bootstrap: "#7952b3",
   js: "#FBD148",
   react: "#32C1CD",
   nodejs: "#44883e",
@@ -36,31 +37,61 @@ export const Title = styled.h2`
 
 export const Icons = styled.i`
   transition: 0.5s;
+  margin: 0 2px;
+  font-size: 25px;
 
-  &:hover {
-    color: ${(props) => {
-      if (props.className.includes("py")) return langs["py"];
-      else if (props.className.includes("js")) return langs["js"];
-      else if (props.className.includes("react")) return langs["react"];
-      else if (props.className.includes("node")) return langs["nodejs"];
-      else if (props.className.includes("database")) return langs["database"];
-      else if (props.className.includes("html")) return langs["html"];
-      else if (props.className.includes("css")) return langs["css"];
-      else if (props.className.includes("github")) return langs["github"];
-      else if (props.className.includes("git")) return langs["git"];
-      else if (props.className.includes("twitter")) return langs["twitter"];
-      else if (props.className.includes("linkedin")) return langs["linkedin"];
-      else {
-        return "#314";
-      }
-    }};
+  color: ${(props) => {
+    if (props.className.includes("py")) return langs["py"];
+    else if (props.className.includes("js")) return langs["js"];
+    else if (props.className.includes("react")) return langs["react"];
+    else if (props.className.includes("node")) return langs["nodejs"];
+    else if (props.className.includes("database")) return langs["database"];
+    else if (props.className.includes("html")) return langs["html"];
+    else if (props.className.includes("css")) return langs["css"];
+    else if (props.className.includes("github")) return langs["github"];
+    else if (props.className.includes("git")) return langs["git"];
+    else if (props.className.includes("twitter")) return langs["twitter"];
+    else if (props.className.includes("linkedin")) return langs["linkedin"];
+    else if (props.className.includes("bootstrap")) return langs["bootstrap"];
+    else {
+      return "#314";
+    }
+  }}};
+
+  @media (min-width: 650px) {
+    color:inherit;
+    &:hover {
+      color: ${(props) => {
+        if (props.className.includes("py")) return langs["py"];
+        else if (props.className.includes("js")) return langs["js"];
+        else if (props.className.includes("react")) return langs["react"];
+        else if (props.className.includes("node")) return langs["nodejs"];
+        else if (props.className.includes("database")) return langs["database"];
+        else if (props.className.includes("html")) return langs["html"];
+        else if (props.className.includes("css")) return langs["css"];
+        else if (props.className.includes("github")) return langs["github"];
+        else if (props.className.includes("git")) return langs["git"];
+        else if (props.className.includes("twitter")) return langs["twitter"];
+        else if (props.className.includes("linkedin")) return langs["linkedin"];
+        else if (props.className.includes("bootstrap"))
+          return langs["bootstrap"];
+        else {
+          return "#314";
+        }
+      }};
+    }
   }
+  
 `;
 
 export const Card = styled.div`
   color: #99a799;
   text-align: center;
   font-size: 150px;
+  & ${Icons} {
+    margin: 0;
+    font-size: 150px;
+  }
   width: 100%;
   max-width: 250px;
 `;
