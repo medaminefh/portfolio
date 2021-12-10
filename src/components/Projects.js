@@ -45,6 +45,7 @@ function Projects() {
               <p className="card-text">This is A Tweet like App.</p>
               <Icons className="fab fa-python"></Icons>
               <Icons className="fab fa-js"></Icons>
+              <Icons className="fas fa-database"></Icons>
             </div>
             <Btn
               rel="noreferrer noopener"
@@ -63,7 +64,7 @@ function Projects() {
 
               <Icons className="fab fa-react"></Icons>
               <Icons className="fab fa-node"></Icons>
-              <Icons className="fab fa-database"></Icons>
+              <Icons className="fas fa-database"></Icons>
             </div>
             <Btn
               rel="noreferrer noopener"
@@ -100,6 +101,7 @@ function Projects() {
               <Icons className="fab fa-react"></Icons>
               <Icons className="fab fa-bootstrap"></Icons>
               <Icons className="fab fa-node"></Icons>
+              <Icons className="fas fa-database"></Icons>
             </div>
             <Btn
               rel="noreferrer noopener"
