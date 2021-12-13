@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import Bullets from "./Bullets";
 import { Btn, Icons } from "./utils";
 
 const Important = styled.span`
-  color: #f3950d;
+  color: ${(props) => props.theme.important};
   text-decoration: underline;
 `;
 
@@ -13,24 +14,23 @@ const AboutMe = styled.div`
   display: flex;
   text-align: center;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
   max-height: 100vh;
-  & > h5,
+  & > h4,
   p,
   ${Btn} {
     margin: 2rem auto;
   }
 `;
 
-function About() {
+function About({ mode, toggle }) {
   return (
     <AboutMe id="about">
       <h1>
         I'm A <Important>Web</Important> Developer
       </h1>
-      <h5>
+      <h4>
         Med Amine Fh, A Self-Taught web developer.{" "}
         <p>
           I Enjoy creating Things with [
@@ -50,7 +50,8 @@ function About() {
             Dev.to
           </Important>{" "}
         </p>
-      </h5>
+      </h4>
+      <Bullets toggle={toggle} />
 
       <Btn href="#projects">Projects</Btn>
     </AboutMe>

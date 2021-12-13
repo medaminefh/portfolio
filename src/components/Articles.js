@@ -8,8 +8,9 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
-  margin-block: 2rem;
+
   gap: 2rem;
+  padding: 2rem 0;
 `;
 
 const Card = styled.div`
@@ -19,8 +20,10 @@ const Card = styled.div`
   overflow: hidden;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
-  background: #ece9e6;
-  background: linear-gradient(to right, #ffffff, #ece9e6);
+  background: ${(props) =>
+    props.theme.bg ?? "linear-gradient(to right, #ffffff, #ece9e6)"};
+
+  color: ${(props) => props.theme.text};
   & .card__footer {
     display: flex;
     padding: 1rem;
@@ -37,6 +40,7 @@ const Card = styled.div`
 
       & a {
         transition: 0.3s ease;
+        text-decoration: underline;
         color: inherit;
         &:hover {
           color: #1da1f2;
@@ -57,17 +61,17 @@ const Card = styled.div`
   }
 
   & .user__info > small {
-    color: #666;
+    color: ${(props) => (props.theme.bg === "#064635" ? "#ccc" : "#041c32")};
   }
 
   & .reading_time {
-    color: #666;
+    color: ${(props) => (props.theme.bg === "#064635" ? "#ccc" : "#041c32")};
     font-size: 0.75rem;
   }
 
   & .tag {
     align-self: flex-start;
-    color: #041c32;
+    color: ${(props) => (props.theme.bg === "#064635" ? "#ccc" : "#041c32")};
     padding: 0.25em 0.75em;
     border-radius: 0.75rem;
     text-transform: capitalize;

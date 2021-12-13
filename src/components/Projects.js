@@ -8,6 +8,7 @@ const Project = styled.div`
   max-height: 350px;
   width: 100%;
   min-width: 300px;
+
   margin: 1rem 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   -webkit-font-smoothing: antialiased;
@@ -15,6 +16,8 @@ const Project = styled.div`
 
   & .card {
     height: 100%;
+    background-color: ${(props) => props.theme.bg};
+    color: ${(props) => props.theme.text};
   }
   &:hover {
     transform: translate3d(0, 0, 0) scale(1.07);

@@ -4,8 +4,8 @@ export const Btn = styled.a`
   padding: 2px 5px;
   display: block;
   text-align: center;
-  color: #333;
-  background-color: transparent;
+  color: ${(props) => props.theme.text ?? "#333"};
+  background-color: ${(props) => props.theme.bg ?? "transparent"};
   border: 1.6px solid #222;
   transition: 0.3s ease;
   min-width: 200px;

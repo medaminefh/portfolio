@@ -8,12 +8,12 @@ import Certificates from "./Certificates";
 import Articles from "./Articles";
 import ScrollToTop from "./ScrollToTop";
 
-const Home = () => {
+const Home = ({ mode, toggle }) => {
   return (
     <div>
       <Nav />
       <div>
-        <About />
+        <About mode={mode} toggle={toggle} />
         <Projects />
         <Skills />
         <Certificates />
