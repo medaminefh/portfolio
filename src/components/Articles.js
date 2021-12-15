@@ -8,7 +8,6 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
-
   gap: 2rem;
   padding: 2rem 0;
 `;
@@ -22,6 +21,10 @@ const Card = styled.div`
   border-radius: 1em;
   background: ${(props) =>
     props.theme.bg ?? "linear-gradient(to right, #ffffff, #ece9e6)"};
+
+  @media (max-width: 650px) {
+    margin-bottom: 10px;
+  }
 
   color: ${(props) => props.theme.text};
   & .card__footer {

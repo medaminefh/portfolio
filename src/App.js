@@ -5,6 +5,7 @@ import { GlobalStyle } from "./GlobalStyles";
 import "./App.css";
 
 import Home from "./components/Home";
+import Loading from "./components/Loading";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -34,7 +35,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-
+      <Loading />
       <Home mode={mode} toggle={toggle} />
     </ThemeProvider>
   );
