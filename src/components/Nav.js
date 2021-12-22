@@ -34,7 +34,7 @@ const Ul = styled.ul`
   width: 50%;
   & li a {
     position: relative;
-    color: #e5e5e5;
+    color: #252525;
   }
   & li a::before {
     content: "";
@@ -49,7 +49,7 @@ const Ul = styled.ul`
   }
 
   & a:hover::before {
-    background-color: #e5e5e5;
+    background-color: #252575;
     bottom: 0;
   }
 `;

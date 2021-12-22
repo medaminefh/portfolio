@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Bg from "./assets/bg.png";
+
 export const GlobalStyle = createGlobalStyle`
 
   *, *::after, *::before {
@@ -10,10 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {  
-    background-image: url(${Bg});
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
+
     font-family: "Poppins", sans-serif;
     max-width: 100%;
     font-size: 17px;
