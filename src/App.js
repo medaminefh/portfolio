@@ -16,6 +16,11 @@ function App() {
       setMode(localStorage.getItem("theme"));
       toggle(localStorage.getItem("theme"));
     }
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }, []);
 
   const toggle = (mode) => {

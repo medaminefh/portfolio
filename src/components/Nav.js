@@ -1,26 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import Me from "../assets/me.jpg";
+import Me from "../assets/me.png";
 
 const Container = styled.span`
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: auto;
+  margin-right: 5px;
   border-radius: 50%;
   overflow: hidden;
 `;
 
 const Img = styled.img`
-  position: absolute;
   filter: contrast(150%);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
+  width: 100%;
+  height: auto;
 `;
 
 const Navbar = styled.nav`
-  z-index: 2;
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
@@ -35,11 +32,30 @@ const Ul = styled.ul`
   display: flex;
   justify-content: space-between;
   width: 50%;
+  & li a {
+    position: relative;
+    color: #e5e5e5;
+  }
+  & li a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-color: transparent;
+    transition: 0.3s ease;
+  }
+
+  & a:hover::before {
+    background-color: #e5e5e5;
+    bottom: 0;
+  }
 `;
 
 const Logo = styled.p`
   display: flex;
-  width: 200px;
   justify-content: space-between;
   align-items: center;
 `;
