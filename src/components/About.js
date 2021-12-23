@@ -89,13 +89,7 @@ function About({ mode, toggle }) {
             Linkedin
           </a>{" "}
           ,Or just{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://dev.to/medaminefh"
-          >
-            send me an email
-          </a>
+          <a href="mailto:fhal.mohamed.amine@gmail.com">send me an email</a>
         </h4>
 
         <Bullets toggle={toggle} />
