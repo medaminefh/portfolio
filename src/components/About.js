@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Bullets from "./Bullets";
-import { Btn, Icons } from "./utils";
+import Img from "../assets/drinking-cafee.svg";
 
 const Important = styled.span`
   color: ${(props) => props.theme.important};
@@ -10,49 +10,97 @@ const Important = styled.span`
 
 const AboutMe = styled.div`
   height: 100vh;
-  padding: 0 0.4rem;
+  padding: 0.5em 0.4rem;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  & > h4,
-  p,
-  ${Btn} {
-    margin: 2rem auto;
+
+  & div h4 {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 30px 0;
+    line-height: 32px;
+    max-width: 450px;
+    color: #5a6065;
+  }
+
+  & div h4 a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    & {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+    & > div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    & img {
+      max-width: 50%;
+    }
   }
 `;
 
 function About({ mode, toggle }) {
   return (
     <AboutMe id="about">
-      <h1>
-        I'm A <Important>Web</Important> Developer
-      </h1>
-      <h4>
-        Med Amine Fh, A Self-Taught web developer.{" "}
-        <p>
-          I Enjoy creating Things with [
-          <Icons title="Python" className="fab fa-python"></Icons>{" "}
-          <Icons title="JS" className="fab fa-js"></Icons>{" "}
-          <Icons title="HTML" className="fab fa-html5"></Icons>{" "}
-          <Icons title="CSS" className="fab fa-css3-alt"></Icons>]
-        </p>
-        <p>
-          I Write on{" "}
-          <Important
+      <div>
+        <h1>
+          I'm a <Important>Web</Important> Developer.
+        </h1>
+        <h4>
+          Check out my latest{" "}
+          <a
             rel="noreferrer noopener"
             target="_blank"
-            as="a"
             href="https://dev.to/medaminefh"
           >
-            Dev.to
-          </Important>{" "}
-        </p>
-      </h4>
-      <Bullets toggle={toggle} />
+            Blogs
+          </a>
+          , find me on{" "}
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://twitter.com/medaminefh"
+          >
+            Twitter
+          </a>{" "}
+          /{" "}
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/medaminefh"
+          >
+            Github
+          </a>{" "}
+          /{" "}
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://www.linkedin.com/in/mohamed-amine-fhal"
+          >
+            Linkedin
+          </a>{" "}
+          ,Or just{" "}
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://dev.to/medaminefh"
+          >
+            send me an email
+          </a>
+        </h4>
 
-      <Btn href="#projects">Projects</Btn>
+        <Bullets toggle={toggle} />
+      </div>
+      <img src={Img} alt="drinking cafee" />
     </AboutMe>
   );
 }

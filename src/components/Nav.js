@@ -34,7 +34,7 @@ const Ul = styled.ul`
   width: 50%;
   & li a {
     position: relative;
-    color: #252525;
+    color: #5a6065;
   }
   & li a::before {
     content: "";
@@ -49,7 +49,7 @@ const Ul = styled.ul`
   }
 
   & a:hover::before {
-    background-color: #252575;
+    background-color: #5a6065;
     bottom: 0;
   }
 `;
@@ -57,6 +57,7 @@ const Ul = styled.ul`
 const Logo = styled.p`
   display: flex;
   justify-content: space-between;
+  color: #5a6065;
   align-items: center;
 `;
 
