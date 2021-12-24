@@ -29,6 +29,10 @@ const AboutMe = styled.div`
     text-decoration: underline;
   }
 
+  & img {
+    align-self: flex-start;
+  }
+
   @media (max-width: 600px) {
     & {
       flex-direction: column-reverse;
@@ -43,6 +47,7 @@ const AboutMe = styled.div`
       text-align: center;
     }
     & img {
+      align-self: center;
       max-width: 50%;
     }
   }
