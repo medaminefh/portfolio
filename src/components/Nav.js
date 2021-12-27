@@ -1,21 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Me from "../assets/me.png";
-
-const Container = styled.span`
-  position: relative;
-  width: 40px;
-  height: auto;
-  margin-right: 5px;
-  border-radius: 50%;
-  overflow: hidden;
-`;
-
-const Img = styled.img`
-  filter: contrast(150%);
-  width: 100%;
-  height: auto;
-`;
 
 const Navbar = styled.nav`
   display: flex;
@@ -55,21 +39,50 @@ const Ul = styled.ul`
 `;
 
 const Logo = styled.p`
-  display: flex;
-  justify-content: space-between;
   color: #5a6065;
-  align-items: center;
+  position: relative;
+
+  &:before {
+    content: "<";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: transparent;
+    transition: 0.4s ease;
+  }
+
+  &:after {
+    content: "/>";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: transparent;
+    transition: 0.4s ease;
+  }
+
+  &:hover:before {
+    left: -15px;
+    color: #5a6065;
+  }
+
+  &:hover {
+    background-image: linear-gradient(90deg, #e34f26, #0077b5, #44883e);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &:hover:after {
+    right: -20px;
+    color: #5a6065;
+  }
 `;
 
 function Nav() {
   return (
     <Navbar>
-      <Logo className="logo">
-        <Container>
-          <Img src={Me} alt="Med amine fh" />
-        </Container>
-        Med Amine Fh
-      </Logo>
+      <Logo className="logo">Med Amine Fh</Logo>
       <Ul>
         <li>
           <a href="#about"> About</a>
