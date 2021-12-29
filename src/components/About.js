@@ -53,7 +53,7 @@ const AboutMe = styled.div`
   }
 `;
 
-function About({ mode, toggle }) {
+function About({ toggle }) {
   return (
     <AboutMe id="about">
       <div>

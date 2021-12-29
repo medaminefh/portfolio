@@ -25,6 +25,20 @@ function Certificates() {
       <Cards>
         <Card>
           <a
+            href="https://drive.google.com/uc?id=1VFbABuXMRewLV8FC0EhQ3lt9rrzTfgf6"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Img
+              loading={"Lazy"}
+              src={
+                "https://drive.google.com/uc?id=1VFbABuXMRewLV8FC0EhQ3lt9rrzTfgf6"
+              }
+            />
+          </a>
+        </Card>
+        <Card>
+          <a
             href="https://drive.google.com/uc?id=1nqW4rdGdXmF39LJ-jsIp4EKuaKjl6eOI"
             rel="noreferrer noopener"
             target="_blank"
