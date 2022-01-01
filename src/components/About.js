@@ -12,6 +12,7 @@ const AboutMe = styled.div`
   height: 100vh;
   padding: 0.5em 0.4rem;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
 
@@ -31,6 +32,7 @@ const AboutMe = styled.div`
 
   & img {
     align-self: flex-start;
+    margin-top: 30px;
   }
 
   @media (max-width: 600px) {
