@@ -60,7 +60,7 @@ function About({ toggle }) {
     <AboutMe id="about">
       <div>
         <h1>
-          I'm a <Important>Web</Important> Developer.
+          <Important>Hey,</Important> I'm Med Amine.
         </h1>
         <h4>
           Check out my latest{" "}
