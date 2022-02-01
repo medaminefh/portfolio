@@ -75,6 +75,7 @@ function Articles() {
               {articles.map((article) => (
                 <li key={article.id} className="timeline-item">
                   <a
+                    rel="noreferrer noopener"
                     target="_blank"
                     href={article.url}
                     className="h5 d-block mb-2"
