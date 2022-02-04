@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, greenTheme } from "./themes";
 import { GlobalStyle } from "./GlobalStyles";
 import "./App.css";
+import LazyLoad from "react-lazyload";
 
 import Home from "./components/Home";
 import Loading from "./components/Loading";
@@ -38,11 +39,13 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Loading />
-      <Home mode={mode} toggle={toggle} />
-    </ThemeProvider>
+    <LazyLoad height={200} once>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Loading />
+        <Home mode={mode} toggle={toggle} />
+      </ThemeProvider>
+    </LazyLoad>
   );
 }
 
