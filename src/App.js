@@ -6,7 +6,6 @@ import "./App.css";
 import LazyLoad from "react-lazyload";
 
 import Home from "./components/Home";
-import Loading from "./components/Loading";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -42,7 +41,6 @@ function App() {
     <LazyLoad height={200} once>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Loading />
         <Home mode={mode} toggle={toggle} />
       </ThemeProvider>
     </LazyLoad>

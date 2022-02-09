@@ -9,10 +9,12 @@ const ModalBg = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: ${(props) => (props.show ? "0" : "50%")};
+  left: ${(props) => (props.show ? "0" : "50%")};
+  width: ${(props) => (props.show ? "100vw" : "0")};
+  height: ${(props) => (props.show ? "100vh" : "0")};
+  overflow: hidden;
+  transition: 0.5s ease;
 `;
 
 const ModalBody = styled.div`
@@ -25,16 +27,16 @@ function Modal({ children }) {
   return (
     <>
       <div onClick={() => setShow(true)}>{children}</div>
-      {show && (
-        <ModalBg
-          onClick={(e) => {
-            e.stopPropagation();
-            setShow(false);
-          }}
-        >
-          <ModalBody onClick={(e) => e.stopPropagation()}>{children}</ModalBody>
-        </ModalBg>
-      )}
+
+      <ModalBg
+        show={show}
+        onClick={(e) => {
+          e.stopPropagation();
+          setShow(false);
+        }}
+      >
+        <ModalBody onClick={(e) => e.stopPropagation()}>{children}</ModalBody>
+      </ModalBg>
     </>
   );
 }

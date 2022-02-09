@@ -122,7 +122,7 @@ function Projects() {
         rel="noreferrer noopener"
         target="_blank"
       >
-        More
+        More in github
       </Btn>
     </section>
   );
