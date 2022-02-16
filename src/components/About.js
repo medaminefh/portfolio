@@ -60,7 +60,11 @@ function About({ toggle }) {
     <AboutMe id="about">
       <div>
         <h1>
-          <Important>Hey,</Important> I'm Med Amine.
+          <Important>Hey ,</Important>
+          <span role="img" aria-label="hand">
+            👋{" "}
+          </span>
+          I'm Med Amine.
         </h1>
         <h4>
           Check out my latest{" "}
@@ -100,6 +104,18 @@ function About({ toggle }) {
         </h4>
 
         <Bullets toggle={toggle} />
+        <a
+          role="button"
+          className="btn btn-outline-secondary mt-4"
+          href="https://drive.google.com/uc?id=1e8PjkQxoZHUEdPEdBYcauv_wzbKdaf0s"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Download CV{" "}
+          <span role="img" aria-label="hand">
+            →
+          </span>
+        </a>
       </div>
       <img src={Img} alt="drinking cafee" />
     </AboutMe>
