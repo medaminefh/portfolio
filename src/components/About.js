@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Bullets from "./Bullets";
 import Img from "../assets/drinking-cafee.svg";
+import mapImg from "../assets/map.svg";
 
 const Important = styled.span`
   color: ${(props) => props.theme.important};
@@ -15,6 +16,11 @@ const AboutMe = styled.div`
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
+  & div {
+    background-image: url(${mapImg});
+    background-size: cover;
+    background-position: center;
+  }
 
   & div h4 {
     font-size: 22px;
