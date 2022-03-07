@@ -62,6 +62,24 @@ function Projects() {
         <Project>
           <div className="card">
             <div className="card-body">
+              <h5 className="card-title">Todo App</h5>
+              <p className="card-text">A Todo App with TS.</p>
+              <Icons className="fa fa-code"></Icons>
+              <Icons className="fab fa-js"></Icons>
+              <Icons className="fab fa-react"></Icons>
+            </div>
+            <Btn
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://medaminefh.github.io/TodoApp/"
+            >
+              Demo
+            </Btn>
+          </div>
+        </Project>
+        <Project>
+          <div className="card">
+            <div className="card-body">
               <h5 className="card-title">My Blog's App</h5>
               <p className="card-text">My Personal Blog App</p>
 
