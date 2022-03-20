@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Bullets from "./Bullets";
 import Img from "../assets/drinking-cafee.svg";
 import mapImg from "../assets/map.svg";
@@ -7,6 +7,15 @@ import mapImg from "../assets/map.svg";
 const Important = styled.span`
   color: ${(props) => props.theme.important};
   text-decoration: underline;
+`;
+
+const animate = keyframes`
+0%, 100% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-20px);
+}
 `;
 
 const AboutMe = styled.div`
@@ -39,6 +48,7 @@ const AboutMe = styled.div`
   & img {
     align-self: flex-start;
     margin-top: 30px;
+    animation: ${animate} 2s linear infinite;
   }
 
   @media (max-width: 600px) {
