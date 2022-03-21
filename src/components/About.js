@@ -1,21 +1,12 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Bullets from "./Bullets";
-import Img from "../assets/drinking-cafee.svg";
+import Img from "../assets/me.jpg";
 import mapImg from "../assets/map.svg";
 
 const Important = styled.span`
   color: ${(props) => props.theme.important};
   text-decoration: underline;
-`;
-
-const animate = keyframes`
-0%, 100% {
-  transform: translateY(0);
-}
-50% {
-  transform: translateY(-20px);
-}
 `;
 
 const AboutMe = styled.div`
@@ -47,8 +38,8 @@ const AboutMe = styled.div`
 
   & img {
     align-self: flex-start;
-    margin-top: 30px;
-    animation: ${animate} 2s linear infinite;
+    margin-top: 50px;
+    border-radius: 7px;
   }
 
   @media (max-width: 600px) {
@@ -57,6 +48,7 @@ const AboutMe = styled.div`
       justify-content: space-between;
     }
     & > div {
+      background-image: none;
       height: 100%;
       display: flex;
       flex-direction: column;
