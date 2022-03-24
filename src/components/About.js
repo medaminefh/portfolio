@@ -9,6 +9,49 @@ const Important = styled.span`
   text-decoration: underline;
 `;
 
+const ImgDiv = (props) => {
+  const Container = styled.div`
+    & {
+      position: relative;
+      align-self: flex-start;
+      margin-top: 50px;
+    }
+
+    & img {
+      border-radius: 7px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: ${(props) => props.theme.important};
+      top: -10px;
+      right: -10px;
+      border-radius: 10px;
+      z-index: -1;
+    }
+
+    @media (max-width: 600px) {
+      & {
+        align-self: center;
+        max-width: 60vw;
+        max-height: content;
+      }
+
+      & img {
+        width: 100%;
+      }
+    }
+  `;
+  return (
+    <Container>
+      <img src={props.src} alt={props.alt} />
+    </Container>
+  );
+};
+
 const AboutMe = styled.div`
   height: 100vh;
   padding: 0.5em 0.4rem;
@@ -16,7 +59,7 @@ const AboutMe = styled.div`
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  & div {
+  & > div {
     background-image: url(${mapImg});
     background-size: cover;
     background-position: center;
@@ -36,12 +79,6 @@ const AboutMe = styled.div`
     text-decoration: underline;
   }
 
-  & img {
-    align-self: flex-start;
-    margin-top: 50px;
-    border-radius: 7px;
-  }
-
   @media (max-width: 600px) {
     & {
       flex-direction: column-reverse;
@@ -49,16 +86,11 @@ const AboutMe = styled.div`
     }
     & > div {
       background-image: none;
-      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-    }
-    & img {
-      align-self: center;
-      max-width: 50%;
     }
   }
 `;
@@ -125,7 +157,7 @@ function About({ toggle }) {
           </span>
         </a>
       </div>
-      <img src={Img} alt="drinking cafee" />
+      <ImgDiv src={Img} alt="drinking cafee" />
     </AboutMe>
   );
 }
