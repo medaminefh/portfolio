@@ -13,12 +13,13 @@ const ImgDiv = (props) => {
   const Container = styled.div`
     & {
       position: relative;
-      align-self: flex-start;
       margin-top: 50px;
+      max-width: 500px;
     }
 
     & img {
       border-radius: 7px;
+      width: 100%;
     }
 
     &:before {
@@ -38,10 +39,6 @@ const ImgDiv = (props) => {
         align-self: center;
         max-width: 60vw;
         max-height: content;
-      }
-
-      & img {
-        width: 100%;
       }
     }
   `;
@@ -82,7 +79,7 @@ const AboutMe = styled.div`
   @media (max-width: 600px) {
     & {
       flex-direction: column-reverse;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
     & > div {
       background-image: none;
@@ -147,7 +144,7 @@ function About({ toggle }) {
         <a
           role="button"
           className="btn btn-outline-secondary mt-4"
-          href="https://drive.google.com/uc?id=14AHFf0VTvfWgQA2UY64GRh8v-na1R5Hv"
+          href="https://drive.google.com/uc?id=1ldbNwQyI-QGFszNVtzSFwr3EyM-PaE6S"
           rel="noreferrer noopener"
           target="_blank"
         >
@@ -157,7 +154,7 @@ function About({ toggle }) {
           </span>
         </a>
       </div>
-      <ImgDiv src={Img} alt="drinking cafee" />
+      <ImgDiv src={Img} alt="Mohamed Amine Fhal Photo" />
     </AboutMe>
   );
 }
