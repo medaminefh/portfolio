@@ -67,12 +67,6 @@ const Logo = styled.p`
     color: #5a6065;
   }
 
-  &:hover {
-    background-image: linear-gradient(90deg, #e34f26, #0077b5, #44883e);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
   &:hover:after {
     right: -20px;
     color: #5a6065;

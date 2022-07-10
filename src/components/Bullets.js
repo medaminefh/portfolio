@@ -37,14 +37,14 @@ const Span = styled.span`
 function Bullets({ toggle }) {
   return (
     <Container>
-      <Span onClick={() => toggle("light")}>
-        <Bullet color={"#ccc"} />
-      </Span>
-      <Span onClick={() => toggle("dark")}>
-        <Bullet color={"#122"} />
+      <Span onClick={() => toggle("yellow")}>
+        <Bullet color={"#f3950d"} />
       </Span>
       <Span onClick={() => toggle("green")}>
         <Bullet color={"#7f5"} />
+      </Span>
+      <Span onClick={() => toggle("blue")}>
+        <Bullet color={"#32C1CD"} />
       </Span>
     </Container>
   );

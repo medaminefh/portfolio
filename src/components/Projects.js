@@ -44,6 +44,25 @@ function Projects() {
         <Project>
           <div className="card">
             <div className="card-body">
+              <h5 className="card-title">Klondike Game</h5>
+              <p className="card-text">
+                A Klondike Game with Vue3 & TailwindCss
+              </p>
+              <Icons className="fab fa-vuejs" />
+              <Icons className="fab fa-js" />
+            </div>
+            <Btn
+              rel="noreferrer noopener"
+              target="_blank"
+              href="https://klondikevue.netlify.app/"
+            >
+              Demo
+            </Btn>
+          </div>
+        </Project>
+        <Project>
+          <div className="card">
+            <div className="card-body">
               <h5 className="card-title">Network App</h5>
               <p className="card-text">This is A Tweet like App.</p>
               <Icons className="fab fa-python"></Icons>

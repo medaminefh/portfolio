@@ -1,17 +1,17 @@
-export const lightTheme = {
-  bg: "#eee",
-  text: "#333",
+export const yellowTheme = {
+  bg: "#F8F9D7",
+  text: "#444",
   important: "#f3950d",
 };
 
-export const darkTheme = {
-  bg: "#333",
+export const greenTheme = {
+  bg: "#4E9F3D",
   text: "#eee",
   important: "#4E9F3D",
 };
 
-export const greenTheme = {
-  bg: "#064635",
-  text: "#F4EEA9",
+export const BlueTheme = {
+  bg: "#32C1CD",
+  text: "#eee",
   important: "#32C1CD",
 };
