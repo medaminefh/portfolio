@@ -23,6 +23,10 @@ function Skills() {
         </Card>
 
         <Card>
+          <Icons title="Vuejs" className="fab fa-vuejs"></Icons>
+        </Card>
+
+        <Card>
           <Icons title="Nodejs" className="fab fa-node"></Icons>
         </Card>
 

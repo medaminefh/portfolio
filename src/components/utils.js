@@ -29,10 +29,25 @@ const langs = {
   linkedin: "#0077b5",
   git: "#e24329",
   database: "#66806A",
+  vuejs: "#41B883",
 };
 
 export const Title = styled.h2`
+  letter-spacing: 2px;
+  font-weight: bolder;
+  font-size: 42px;
+  background: ${(props) =>
+    "-webkit-linear-gradient(45deg," + props.theme.important + ", #eee)"};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: 650px) {
+    & {
+      font-size: 72px;
+    }
+  }
 `;
 
 export const Icons = styled.i`
@@ -42,6 +57,7 @@ export const Icons = styled.i`
 
   color: ${(props) => {
     if (props.className.includes("py")) return langs["py"];
+    else if (props.className.includes("vuejs")) return langs["vuejs"];
     else if (props.className.includes("js")) return langs["js"];
     else if (props.className.includes("react")) return langs["react"];
     else if (props.className.includes("node")) return langs["nodejs"];
@@ -63,6 +79,7 @@ export const Icons = styled.i`
     &:hover {
       color: ${(props) => {
         if (props.className.includes("py")) return langs["py"];
+        else if (props.className.includes("vuejs")) return langs["vuejs"];
         else if (props.className.includes("js")) return langs["js"];
         else if (props.className.includes("react")) return langs["react"];
         else if (props.className.includes("node")) return langs["nodejs"];
@@ -98,7 +115,7 @@ export const Card = styled.div`
 
 export const Cards = styled.div`
   position: realtive;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
